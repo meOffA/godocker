@@ -6,7 +6,7 @@ COPY go.mod ./
 RUN go mod download
 COPY . ./
 
-RUN go get -u github.com/KariiO/cmentarz_golang_ath
+RUN go get -u github.com/meOffA/godocker.git
 
 RUN CGO_ENABLED=0 GOOS=linux go build main.go
 
